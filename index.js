@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-var AudioContext = require('web-audio-api').AudioContext;
 
 app.set('port', (process.env.PORT || 5000));
 
