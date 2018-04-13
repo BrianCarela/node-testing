@@ -53,6 +53,7 @@
     var audio = new Audio();
     // audio.crossOrigin = 'Anonymous'; // DOESN'T WORK??
     audio.src = "audio/WarmItUp.mp3"; // maybe I need to connect this using express. Last chance try is to make the audio a sibling file
+    // GET http://localhost:5000/audio/WarmItUp.mp3 404 (Not Found)
     audio.controls = true;
     audio.loop = true;
     audio.autoplay = false;
