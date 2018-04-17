@@ -70,7 +70,7 @@
         bar_height = -(fbc_array[i] / 2); // frequency data, of the current index. The amplitude
 
         // here I'm finding out stuff about the bar_height
-        barH.innerHTML = fbc_array;
+        barH.innerHTML = fbc_array; // this is a simple trick for now, but I want to make a 32x32 grid, and loop over it and fill the number (amp) into each of them
         // Doing this at every frame makes everything lag, so idk if I'll have to comment out the *BAR* visualization for testing purposes. Then I'll make a grid of the array, change the color of the text as it increases, and that'll be my new visualisation.
 
         // fillRect(x, y, width, height) // explanation of the parameters below
