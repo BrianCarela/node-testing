@@ -8,7 +8,7 @@
     /*1024 width because 512 1px length bars, with 1px gap in btwn.*/
     /*256 height for pixel-per-amplitude accuracy*/
     canvas{ width: 1024px; height: 256px; background-color: #002D3C;}
-    #barH{margin-top: 300px;}
+    #barH{margin-top: 300px; word-wrap: break-word;}
   </style>
 </head>
 <body>
@@ -71,6 +71,7 @@
 
         // here I'm finding out stuff about the bar_height
         barH.innerHTML = fbc_array;
+        // Doing this at every frame makes everything lag, so idk if I'll have to comment out the *BAR* visualization for testing purposes. Then I'll make a grid of the array, change the color of the text as it increases, and that'll be my new visualisation.
 
         // fillRect(x, y, width, height) // explanation of the parameters below
         ctx.fillRect(bar_x, canvas.height, bar_width, bar_height); // this draws the bars themselves
