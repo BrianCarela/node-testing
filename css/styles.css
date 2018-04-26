@@ -1,6 +1,29 @@
-#mp3_player{width: 500px; height: 60px; background-color: #000; padding: 5px; margin: 50px;}
-    #audio_box{width: 500px; background-color: #000;}
-    /*1024 width because 512 1px length bars, with 1px gap in btwn.*/
-    /*256 height for pixel-per-amplitude accuracy*/
-    canvas{ width: 1024px; height: 256px; background-color: #002D3C;}
-    #barH{margin-top: 300px; word-wrap: break-word;}
+#mp3_player{
+  width: 500px;
+  height: 60px;
+  background-color: #000;
+  padding: 5px;
+  margin: 50px;
+}
+
+#audio_box{
+  width: 500px;
+  background-color: #000;
+}
+
+/*1024 width because 512 1px length bars, with 1px gap in btwn.*/
+/*256 height for pixel-per-amplitude accuracy*/
+canvas{
+  width: 1024px;
+  height: 256px;
+  background-color: #002D3C;
+}
+
+#barH{
+  margin-top: 300px;
+  word-wrap: break-word;
+}
+
+td{
+  border: 1px black;
+}
