@@ -1,3 +1,5 @@
+var amps = $('td');
+// console.log(amps); // successfully selected all table data's. Time to fill them with the frequency data, but only change the values when the array changes
 
 // create a new instance of an audio object, give it some properties manually
 var audio = new Audio();
@@ -42,10 +44,15 @@ function frameLooper() {
   ctx.fillStyle = '#00CCFF'; // color of the bars. I chose sky blue
   bars = 512; // how many bars to render. 128 might make the most sense.
   // fbc_array.length == 1024, so each bar represents 8 frequencies
+
+  // ok so this entire function is CONSTANTLY running. This for loop runs every time the function runs, so right in btwn redefining the bar height and doing the barH.innderHTML, I'm gonna make i visible in one of the table data's. Just to see what happens
+
   for(var i = 0; i < bars; i++){
     bar_x = i * 2; // each bar is 3 units apart on the x axis
     bar_width = 1; // each bar is 2 units wide. 0-1 is a bar, 2 is not, 3-4 is a bar, etc. But this is based on the width of the canvas
     bar_height = -(fbc_array[i] / 2); // frequency data, of the current index. The amplitude
+
+
 
     // here I'm finding out stuff about the bar_height
     barH.innerHTML = fbc_array; // this is a simple trick for now, but I want to make a 32x32 grid, and loop over it and fill the number (amp) into each of them
