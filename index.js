@@ -18,6 +18,10 @@ app.set('view engine', 'ejs'); // changed ejs to html for html files, but it loo
 // declare audio directory to be used as a store for static files
 app.use('/audio', express.static(__dirname + '/audio'));
 
+// same for my js and css files
+app.use('/js', express.static(__dirname + '/js'));
+app.use('/css', express.static(__dirname + '/css'));
+
 app.get('/', function(request, response) {
   response.render('pages/index');
 });
