@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 #mp3_player{
   width: 500px;
   height: 60px;
@@ -24,6 +28,14 @@ canvas{
   word-wrap: break-word;
 }
 
+/* unsure how to get rid of that extra space, oh well */
+tr:first-child{
+  margin: 0;
+  padding: 0;
+}
+
 td{
-  border: 1px black;
+  width: 28px;
+  height: 20px;
+  border: 1px solid black;
 }
