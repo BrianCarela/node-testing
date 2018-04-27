@@ -1,10 +1,10 @@
 var amps = $('td');
-console.log(amps[0]); // successfully selected all table data's. Time to fill them with the frequency data, but only change the values when the array changes
+// console.log(amps[0]); // successfully selected all table data's. Time to fill them with the frequency data, but only change the values when the array changes
 
 // create a new instance of an audio object, give it some properties manually
 var audio = new Audio();
 // audio.crossOrigin = 'Anonymous'; // DOESN'T WORK??
-audio.src = "audio/AlliKnow.mp3"; // works because of index.js line 19
+audio.src = "audio/chopin-nocturne.mp3"; // works because of index.js line 19
 audio.controls = true;
 audio.loop = true;
 audio.autoplay = false;
@@ -42,7 +42,7 @@ function frameLooper() {
   analyser.getByteFrequencyData(fbc_array);
   ctx.clearRect(0, 0, canvas.width, canvas.height); // clear the canvas every loop
   ctx.fillStyle = '#00CCFF'; // color of the bars. I chose sky blue
-  bars = 512; // how many bars to render. 128 might make the most sense.
+  bars = 128; // how many bars to render. 128 might make the most sense.
   // fbc_array.length == 1024, so each bar represents 8 frequencies
 
   for(var i = 0; i < bars; i++){
