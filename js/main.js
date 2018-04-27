@@ -60,8 +60,13 @@ function frameLooper() {
     ctx.fillRect(bar_x, canvas.height, bar_width, bar_height); // this draws the bars themselves
   }
 
+
+  // Table visualization
   for(var j = 0; j < fbc_array.length; j++){
     amps[j].innerHTML = fbc_array[j];
+    // styling is gonna be difficult
+    // amps[j].css({"background-color":`rgb(0,${j}, ${j})`});
   }
+
 }
 

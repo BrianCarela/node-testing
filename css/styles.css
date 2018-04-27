@@ -1,5 +1,7 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #mp3_player{
@@ -29,9 +31,11 @@ canvas{
 }
 
 /* unsure how to get rid of that extra space, oh well */
-tr:first-child{
+td:first-child{
   margin: 0;
   padding: 0;
+  background-color: teal;
+  width: 28px;
 }
 
 td{
