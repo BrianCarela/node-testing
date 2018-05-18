@@ -4,7 +4,7 @@ var amps = $('td');
 // create a new instance of an audio object, give it some properties manually
 var audio = new Audio();
 // audio.crossOrigin = 'Anonymous'; // DOESN'T WORK??
-audio.src = "audio/chopin-nocturne.mp3"; // works because of index.js line 19
+audio.src = "audio/AlliKnow.mp3"; // works because of index.js line 19
 audio.controls = true;
 audio.loop = true;
 audio.autoplay = false;
